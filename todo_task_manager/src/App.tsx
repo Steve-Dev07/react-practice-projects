@@ -1,8 +1,15 @@
+import { useState } from "react";
+import { ActiveTabContext } from "./contexts/ActiveTabContext";
+import Sidebar from "./components/Sidebar";
+
 function App() {
+
+  const [activeTab, setActiveTab] = useState(1);
+
   return(
-    <>
-      <h1>Initial setup of todo_task_manager</h1>
-    </>
+    <ActiveTabContext.Provider value={{ activeTab, setActiveTab }}>
+      <Sidebar />
+    </ActiveTabContext.Provider>
   );
 }
 
