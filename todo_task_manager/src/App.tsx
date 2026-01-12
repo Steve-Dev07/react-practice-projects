@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ActiveTabContext } from "./contexts/ActiveTabContext";
+import Sidebar from "./components/Sidebar";
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
 
   return(
     <ActiveTabContext.Provider value={{ activeTab, setActiveTab }}>
+      <Sidebar />
     </ActiveTabContext.Provider>
   );
 }
