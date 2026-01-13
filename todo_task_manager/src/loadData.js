@@ -27,6 +27,13 @@ const data = {
             dueDate: new Date().setDate(new Date().getDate() + 2),
             completed: true,
             tags: ["example", "important", "game"]
+        },
+                {
+            title: "Day after tomorrow task 2",
+            description: "No more study",
+            dueDate: new Date().setDate(new Date().getDate() + 2),
+            completed: true,
+            tags: ["example", "important", "study"]
         }
     ]
 };
