@@ -38,6 +38,6 @@ const data = {
     ]
 };
 
-if (localStorage.getItem("data") != null) {
+if (localStorage.getItem("data") == null) {
     localStorage.setItem("data", JSON.stringify(data));
 }
