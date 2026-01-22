@@ -1,7 +1,7 @@
 #sidebar-container {
-    position: absolute;
-    left: 0;
-    width: 280px;
+    position: sticky;
+    top: 0;
+    width: 260px;
     height: 100vh;
     background-color: #e9e9e9;
 }
@@ -16,4 +16,9 @@
     background-color: rgb(223, 91, 91);
     color: white;
     border-radius: 0px;
+}
+
+#add-btn {
+    color: white;
+    background-color: rgb(223, 62, 62);
 }

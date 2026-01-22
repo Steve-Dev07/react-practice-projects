@@ -1,11 +1,15 @@
 import SidebarBtn from "./SidebarBtn";
 import "../css/sidebar.css";
+import AddBtn from "./AddBtn";
 
 function Sidebar() {
   return(
     <div id="sidebar-container">
-      <h5 className="ps-3 mt-4"><b><i className="bi bi-list-check"></i>&ensp;Manage Tasks</b></h5>
-      <div className="mt-5">
+      <h5 className="ps-3 pt-4"><b><i className="bi bi-list-check"></i>&ensp;Manage Tasks</b></h5>
+      <div className=" ps-3 mt-5 mb-4">
+        <AddBtn />
+      </div>
+      <div className="mt-3">
         <SidebarBtn icon="calendar-date" label="Today" activeTabIndex={1} />
         <SidebarBtn icon="calendar3" label="Upcoming" activeTabIndex={2} />
         <SidebarBtn icon="bookmark-star" label="Filter & Tags" activeTabIndex={3} />
