@@ -17,3 +17,8 @@
     color: white;
     border-radius: 0px;
 }
+
+#add-btn {
+    color: white;
+    background-color: rgb(223, 62, 62);
+}
