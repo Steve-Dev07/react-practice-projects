@@ -47,8 +47,9 @@ function TaskPanel() {
         </p>
       </div>
       {
-        filteredTasks.map((task) => (
+        filteredTasks.map((task, index) => (
           <Task
+            key={index}
             title={task.title}
             description={task.description}
             dueDate={new Date(task.dueDate).toLocaleDateString()}
