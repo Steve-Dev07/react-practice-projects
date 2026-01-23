@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ActiveTabContext } from "./contexts/ActiveTabContext";
 import Sidebar from "./components/Sidebar";
 import TaskPanel from "./components/TaskPanel";
+import AddTaskModal from "./components/AddTaskModal";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Sidebar />
       <TaskPanel />
       </div>
+      <AddTaskModal />
     </ActiveTabContext.Provider>
   );
 }
