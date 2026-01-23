@@ -1,13 +1,13 @@
 import SidebarBtn from "./SidebarBtn";
 import "../css/sidebar.css";
-import AddBtn from "./AddBtn";
+import AddTaskBtn from "./AddTaskBtn";
 
 function Sidebar() {
   return(
     <div id="sidebar-container">
       <h5 className="ps-3 pt-4"><b><i className="bi bi-list-check"></i>&ensp;Manage Tasks</b></h5>
       <div className=" ps-3 mt-5 mb-4">
-        <AddBtn />
+        <AddTaskBtn />
       </div>
       <div className="mt-3">
         <SidebarBtn icon="calendar-date" label="Today" activeTabIndex={1} />
